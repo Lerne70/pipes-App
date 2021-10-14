@@ -35,8 +35,15 @@
         <li>fecha | date: 'long'</li>
         <li>fecha | date: 'MMM'</li>
         <li>fecha | date: 'MMM, dd, yyyy'</li>
-
       </ul>
+
+      <hr>
+      <ul>
+        <li>fecha | date: 'long':'GMT-6':'es-MX</li>
+        <li>fecha | date: 'long':'GMT-4'</li>
+        <li>fecha | date: 'long':'':'fr'</li>
+      </ul>
+
     </p-card>
   </div>
   <div class="col-6">
@@ -49,6 +56,15 @@
         <li>{{ fecha | date: 'MMMM' }}</li>
         <li>{{ fecha | date: 'MMMM, dd, yyyy' }}</li>
       </ul>
+
+      <hr>
+      <ul>
+        <!-- Segun el idioma importado es el codigo que se le pone, osea para español mexico se usa el es-MX -->
+        <li>{{ fecha | date: 'long':'GMT-6':'es-MX' }}</li>
+        <li>{{ fecha | date: 'long':'GMT-4' }}</li>
+        <li>{{ fecha | date: 'long':'':'fr' }}</li>
+      </ul>
+
     </p-card>
   </div>
 </div>
